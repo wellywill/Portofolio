@@ -1,5 +1,5 @@
 // src/components/Navbar.tsx
-import myProfilePic from "../assets/foto.jpg";
+// import myProfilePic from "../assets/foto.jpg";
 import { useState } from "react";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // State untuk mengontrol apakah menu terbuka atau tidak
