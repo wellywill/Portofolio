@@ -51,7 +51,7 @@ const Skill = () => {
               } border border-red-500 shadow-md shadow-red-600/50 bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 rounded bg-red-800/50 text-[10px] text-white transition pointer-events-none whitespace-nowrap z-10
                 ${
                   activeIdx === idx
-                    ? "opacity-100 animate-bounce-custom"
+                    ? "opacity-100 animate-bounce-custom  transition "
                     : "opacity-0"
                 }
                 group-hover:opacity-100 group-hover:animate-bounce-custom
