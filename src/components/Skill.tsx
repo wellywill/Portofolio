@@ -33,7 +33,7 @@ const Skill = () => {
               className="w-8 h-8 object-contain"
             />
             <span
-              className={`absolute ${data.position} group-hover:animate-bounce-custom border border-red-500 shadow-md shadow-red-600/50  bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 rounded bg-red-800/50 text-[10px] text-white opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10`}
+              className={`absolute ${data.position} group-hover:animate-bounce-custom group-focus:animate-bounce-custom border border-red-500 shadow-md shadow-red-600/50  bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 rounded bg-red-800/50 text-[10px] text-white opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10`}
             >
               {data.label}
             </span>
