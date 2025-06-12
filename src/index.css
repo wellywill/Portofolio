@@ -132,8 +132,6 @@
   --animate-bounce-custom: bounce-custom 1.5s ease-in-out; /* Ubah variabel dan nama animasi */
 
   @keyframes bounce-custom {
-    /* Ubah nama keyframes */
-
     100% {
       transform: translateY(0); /* Posisi awal, tengah, dan akhir */
     }
