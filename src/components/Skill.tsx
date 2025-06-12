@@ -48,12 +48,13 @@ const Skill = () => {
             <span
               className={`absolute ${
                 data.position
-              } border border-red-500 shadow-md shadow-red-600/50 bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 rounded bg-red-800/50 text-[10px] text-white opacity-0 group-hover:opacity-100 group-hover:animate-bounce-custom transition pointer-events-none whitespace-nowrap z-10
+              } border border-red-500 shadow-md shadow-red-600/50 bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 rounded bg-red-800/50 text-[10px] text-white transition pointer-events-none whitespace-nowrap z-10
                 ${
                   activeIdx === idx
-                    ? "opacity-100 animate-bounce-custom pointer-events-none"
-                    : ""
+                    ? "opacity-100 animate-bounce-custom"
+                    : "opacity-0"
                 }
+                group-hover:opacity-100 group-hover:animate-bounce-custom
               `}
             >
               {data.label}
