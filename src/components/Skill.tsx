@@ -17,8 +17,8 @@ const icons = [
 
 const Skill = () => {
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
-  const [hoverIdx, setHoverIdx] = useState<number | null>(null);
 
+  // Untuk close tooltip jika klik di luar icon
   React.useEffect(() => {
     const handleClick = () => setActiveIdx(null);
     window.addEventListener("click", handleClick);
@@ -35,10 +35,7 @@ const Skill = () => {
           <div
             key={idx}
             className="relative flex items-center justify-center bg-red-800/50 rounded-full w-12 h-12 border border-red-500 shadow-lg shadow-red-600/50 hover:scale-105 hover:-translate-y-2 transition duration-300 ease-in-out group"
-            onMouseEnter={() => setHoverIdx(idx)}
-            onMouseLeave={() => setHoverIdx(null)}
             onClick={(e) => {
-              if (hoverIdx === idx) return; // Jangan jalankan onClick saat hover
               e.stopPropagation();
               setActiveIdx(idx === activeIdx ? null : idx);
             }}
